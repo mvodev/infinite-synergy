@@ -1,0 +1,14 @@
+@import './styles/reset.css';
+
+.header {
+  font-size: 30px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.users {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
