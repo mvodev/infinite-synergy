@@ -8,3 +8,5 @@
 Стек технологий: HTML, CSS or preprocessors, React, Redux;
 
 Главное условие: стабильная работа веб-приложения при большом объеме данных.
+
+Тестовая страница: [https://mvodev.github.io/infinite-synergy/]
