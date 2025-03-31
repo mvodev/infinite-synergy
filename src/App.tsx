@@ -3,7 +3,7 @@ import styles from './App.module.css';
 import './App.module.css';
 import UserList from './components/user-list/UserList';
 import UserInfo from './components/user-info/UserInfo';
-
+import { useAppSelector } from './store/hooks';
 export interface User {
   id:number;
   name:string;
@@ -15,17 +15,7 @@ export interface User {
 
 const App = () => {
   const [userChoice, setUserChoice] = useState<User|null>(null); 
-  const users = new Array(1000000).fill({}).map((_,index)=>{ 
-      return {
-        id:index+1,
-        name:`user ${(index+1)}`,
-        position:`user position ${(index + 1)}`,
-        department:`user department ${(index + 1)}`,
-        company:'user company',
-        avatar:''
-      }
-    }
-  );
+  const users = useAppSelector((state) => state.users.value);
 
   const handleListClick = (data:User)=>setUserChoice(data)
 

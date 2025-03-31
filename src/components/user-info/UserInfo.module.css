@@ -17,7 +17,7 @@
   padding: 10px;
 }
 
-.userDescription {
+.userDescriptionForm {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -29,4 +29,17 @@
   padding: 10px;
   cursor: pointer;
   color: blue;
+}
+
+.saveButton:hover {
+  background-color: rgb(131, 131, 20);
+}
+
+.error {
+  color: red;
+}
+
+.label{
+  display: flex;
+  flex-direction: column;
 }
